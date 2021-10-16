@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Ping Pong</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1"><img
+                                    src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                    alt="Ping pong mesa"></figure>
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title has-text-centered">
+                                Ping Pong Score
+                            </p>
+                            <button class="card-header-icon" aria-label="more options">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class="title is-1 has-text-centered"><span id="p1Display">0</span> to <span
+                                        id="p2Display">0</span></h1>
+                                <p class="subtitle has-text-centered">Use os botões abaixo para manter a pontuação.</p>
+                            </div>
+
+                            <label for="playto" class="label is-large is-inline">Rounds:</label>
+                            <div class="select is-rounded">
+                                <select name="" id="playto">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="p1Button" class="button is-primary card-footer-item is-large">+1 Player
+                                1</button>
+                            <button id="p2Button" class="button is-info card-footer-item is-large">+1 Player 2</button>
+                            <button id="reset" class="button is-danger card-footer-item is-large">Reiniciar</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app1.js"></script>
+</body>
+
+</html>
